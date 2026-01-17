@@ -1,3 +1,15 @@
+html,
+body {
+  touch-action: manipulation;
+  overscroll-behavior: none;
+  -ms-touch-action: manipulation;
+}
+input,
+textarea,
+select {
+  font-size: 16px;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -53,7 +65,9 @@ a:hover {
   padding: 16px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .dark .card-mahasiswa {
