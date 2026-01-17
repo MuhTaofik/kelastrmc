@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Jadwal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { darkMode: "class" };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body
+    class="font-['Inter'] bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100"
+  >
+    <nav class="fixed top-0 w-full z-50 glass shadow">
+      <div
+        class="max-w-7xl mx-auto h-16 px-4 flex justify-between items-center"
+      >
+        <a href="index.html" class="flex items-center gap-2">
+          <img
+            src="assets/img/LogoUtama/logo.jpeg"
+            class="w-8 h-8 rounded-full object-cover border border-white/30"
+          />
+          <span class="font-bold text-blue-600">classtrmc</span>
+        </a>
+        <div class="flex items-center gap-4">
+          <button id="darkToggle">🌙</button>
+          <button id="menuBtn" class="md:hidden text-xl">☰</button>
+          <ul class="hidden md:flex gap-6 font-medium">
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="mahasiswa.html">Mahasiswa</a></li>
+            <li><a href="pengumuman.html">Pengumuman</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="jadwal.html">Jadwal</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden glass px-4 pb-4">
+        <a href="profil.html" class="block py-2">Profil</a>
+        <a href="mahasiswa.html" class="block py-2">Mahasiswa</a>
+        <a href="pengumuman.html" class="block py-2">Pengumuman</a>
+        <a href="galeri.html" class="block py-2">Galeri</a>
+        <a href="jadwal.html" class="block py-2">Jadwal</a>
+        <a href="kontak.html" class="block py-2">Kontak</a>
+      </div>
+    </nav>
+    <div class="pt-20"></div>
+
+    <section class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">
+        Jadwal Kuliah
+      </h2>
+
+      <!-- wrapper responsive -->
+      <div class="overflow-x-auto rounded-2xl shadow glass">
+        <table class="w-full text-sm md:text-base">
+          <thead class="bg-blue-600 text-white">
+            <tr>
+              <th class="px-4 py-3 text-left">Hari</th>
+              <th class="px-4 py-3 text-left">Mata Kuliah</th>
+              <th class="px-4 py-3 text-left">Dosen</th>
+              <th class="px-4 py-3 text-left">Jam</th>
+              <th class="px-4 py-3 text-left">Ruang</th>
+            </tr>
+          </thead>
+
+          <tbody class="divide-y dark:divide-slate-700">
+            <tr class="hover:bg-blue-50 dark:hover:bg-slate-800 transition">
+              <td class="px-4 py-3 font-medium">Senin</td>
+              <td class="px-4 py-3">Pemrograman Web</td>
+              <td class="px-4 py-3">Dr. Andi</td>
+              <td class="px-4 py-3">08.00 – 10.30</td>
+              <td class="px-4 py-3">Lab Multimedia</td>
+            </tr>
+
+            <tr class="hover:bg-blue-50 dark:hover:bg-slate-800 transition">
+              <td class="px-4 py-3 font-medium">Selasa</td>
+              <td class="px-4 py-3">Desain UI/UX</td>
+              <td class="px-4 py-3">Siti Rahma, M.Kom</td>
+              <td class="px-4 py-3">10.00 – 12.30</td>
+              <td class="px-4 py-3">Ruang 204</td>
+            </tr>
+
+            <tr class="hover:bg-blue-50 dark:hover:bg-slate-800 transition">
+              <td class="px-4 py-3 font-medium">Rabu</td>
+              <td class="px-4 py-3">Multimedia Interaktif</td>
+              <td class="px-4 py-3">Budi Santoso</td>
+              <td class="px-4 py-3">08.00 – 10.30</td>
+              <td class="px-4 py-3">Studio Multimedia</td>
+            </tr>
+
+            <tr class="hover:bg-blue-50 dark:hover:bg-slate-800 transition">
+              <td class="px-4 py-3 font-medium">Kamis</td>
+              <td class="px-4 py-3">Manajemen Proyek</td>
+              <td class="px-4 py-3">Dewi Lestari</td>
+              <td class="px-4 py-3">13.00 – 15.30</td>
+              <td class="px-4 py-3">Ruang 301</td>
+            </tr>
+
+            <tr class="hover:bg-blue-50 dark:hover:bg-slate-800 transition">
+              <td class="px-4 py-3 font-medium">Jumat</td>
+              <td class="px-4 py-3">Praktikum Multimedia</td>
+              <td class="px-4 py-3">Tim Dosen</td>
+              <td class="px-4 py-3">08.00 – 11.00</td>
+              <td class="px-4 py-3">Lab Multimedia</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer
+      class="relative mt-6 backdrop-blur-xl bg-white/60 dark:bg-slate-900/60 border-t border-white/30 dark:border-slate-700"
+    >
+      <div class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid gap-6 place-items-center text-center">
+          <div class="text-sm text-slate-500 dark:text-slate-400">
+            <p>
+              © <span id="year"></span><br />
+              Multimedia Engineering Technology | Class C
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        id="backToTop"
+        class="fixed bottom-6 right-6 hidden p-3 rounded-full bg-blue-600 text-white shadow-lg hover:scale-110 transition"
+      >
+        ↑
+      </button>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

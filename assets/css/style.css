@@ -1,0 +1,100 @@
+* {
+  scroll-behavior: smooth;
+}
+a {
+  transition: 0.3s;
+}
+a:hover {
+  color: #3b82f6;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+}
+.dark .glass {
+  background: rgba(30, 41, 59, 0.65);
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}
+
+.animate-shake {
+  animation: shake 0.3s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade {
+  animation: fade 0.4s ease-out;
+}
+/* ===== CARD MAHASISWA ===== */
+.card-mahasiswa {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark .card-mahasiswa {
+  background: rgba(13, 18, 27, 0.7);
+}
+
+.card-mahasiswa:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.35);
+}
+
+/* ===== FOTO MAHASISWA (ZOOM KE ORANG) ===== */
+.foto-mahasiswa {
+  width: 160px;
+  height: 220px; /* portrait fokus ke badan */
+  border-radius: 18px;
+  object-fit: cover; /* crop otomatis */
+  object-position: center top; /* fokus ke wajah */
+  background-color: #2563eb;
+  padding: 2px;
+  margin: 0 auto 12px;
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.45);
+  transition: transform 0.35s ease;
+}
+
+/* efek hover */
+.card-mahasiswa:hover .foto-mahasiswa {
+  transform: scale(1.12);
+}
+
+/* ===== TEXT ===== */
+.nama-mahasiswa {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.nim-mahasiswa {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.dark .nim-mahasiswa {
+  color: #cbd5f5;
+}
