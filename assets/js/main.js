@@ -17,29 +17,24 @@ fetch("assets/data/mahasiswa.json")
   .then((d) => {
     const el = document.getElementById("mahasiswaList");
     if (!el) return;
+
     d.forEach((m) => {
       el.innerHTML += `
-  <div class="glass rounded-xl p-4 shadow text-center hover:-translate-y-1 transition">
-   <img src="${m.foto}" class="w-24 h-24 mx-auto rounded-full mb-3">
-   <h4 class="font-semibold">${m.nama}</h4>
-   <p class="text-sm text-slate-500">${m.nim}</p>
-  </div>`;
-    });
-  });
-fetch("assets/data/mahasiswa.json")
-  .then((res) => res.json())
-  .then((data) => {
-    const container = document.getElementById("mahasiswaList");
-    if (!container) return;
+        <div class="glass rounded-2xl p-4 shadow text-center hover:-translate-y-1 transition">
+          
+          <!-- FOTO -->
+          <div class="w-full aspect-square overflow-hidden rounded-xl bg-blue-100 mb-3">
+            <img
+              src="${m.foto}"
+              alt="${m.nama}"
+              class="w-full h-full object-cover object-center"
+              loading="lazy"
+            />
+          </div>
 
-    container.innerHTML = "";
-
-    data.forEach((mhs) => {
-      container.innerHTML += `
-        <div class="card-mahasiswa">
-          <img src="${mhs.foto}" class="foto-mahasiswa" loading="lazy" />
-          <div class="nama-mahasiswa">${mhs.nama}</div>
-          <div class="nim-mahasiswa">${mhs.nim}</div>
+          <!-- NAMA & NIM -->
+          <h4 class="font-semibold text-sm md:text-base">${m.nama}</h4>
+          <p class="text-xs md:text-sm text-slate-500">${m.nim}</p>
         </div>
       `;
     });

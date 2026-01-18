@@ -1,0 +1,82 @@
+[
+  {
+    "hari": "Kamis",
+    "jam": "07.30 – 08.30",
+    "ruang": "K103",
+    "sks": 2,
+    "matkul": "Pendidikan Pancasila",
+    "dosen": "Dr. Yushan",
+    "tipe": "teori"
+  },
+
+  {
+    "hari": "Senin-Kamis",
+    "jam": "13.30 – 17.30",
+    "ruang": "LAB 3",
+    "sks": 3,
+    "matkul": "Basis Data",
+    "dosen": "Ryan Alghazali Pakkaja, S.Kom., M.Kom. & Deril Affiance Kaligis, S.Kom., M.T.",
+    "minggu": "8",
+    "tipe": "lab"
+  },
+  {
+    "hari": "Senin-Kamis",
+    "jam": "07.30 – 11.30",
+    "ruang": "LAB 2",
+    "sks": 3,
+    "matkul": "Desain Kemasan",
+    "dosen": "Muh. Fitra Nur Asri, S.Kom., M.Kom. & Nurul Qisti, S.TP., M.Si.",
+    "minggu": "13",
+    "tipe": "lab"
+  },
+  {
+    "hari": "Jumat–Sabtu",
+    "jam": "13.30 – 17.30",
+    "ruang": "LAB 2",
+    "sks": 3,
+    "matkul": "Fotografi",
+    "dosen": "Muh. Fitra Nur Asri, S.Kom., M.Kom.",
+    "minggu": "13",
+    "tipe": "lab"
+  },
+  {
+    "hari": "Rabu–Kamis",
+    "jam": "07.30 – 10.30",
+    "ruang": "LAB 3",
+    "sks": 3,
+    "matkul": "Dasar Seni dan Desain",
+    "dosen": "Elma, S.Pd., M.Pd.",
+    "minggu": "14",
+    "tipe": "lab"
+  },
+  {
+    "hari": "Senin-Selasa",
+    "jam": "07.30 – 10.30",
+    "ruang": "LAB 3",
+    "sks": 3,
+    "matkul": "Dasar Seni dan Desain",
+    "dosen": "Nabila Febriyanti., S.Pd., M,Pd.",
+    "minggu": "15",
+    "tipe": "lab"
+  },
+  {
+    "hari": "Senin–Kamis",
+    "jam": "07.30 – 10.30",
+    "ruang": "LAB 1",
+    "sks": 3,
+    "matkul": "Tipografi",
+    "dosen": "Risda M., S.Pd., M.Pd.",
+    "minggu": "15",
+    "tipe": "lab"
+  },
+  {
+    "hari": "Senin-Kamis",
+    "jam": "07.30 – 11.30",
+    "ruang": "LAB 1",
+    "sks": 3,
+    "matkul": "Grafika Komputer",
+    "dosen": "Ryan Alghazali Pakkaja, S.Kom., M.Kom. & Andi Wafda, S.Pd., M.Kom.",
+    "minggu": "16",
+    "tipe": "lab"
+  }
+]
