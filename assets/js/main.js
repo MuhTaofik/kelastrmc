@@ -34,8 +34,7 @@ fetch("assets/data/mahasiswa.json")
 
           <!-- NAMA & NIM -->
           <h4 class="font-semibold text-sm md:text-base">${m.nama}</h4>
-          <p class="text-xs md:text-sm text-slate-500">${m.nim}</p>
-        </div>
+          
       `;
     });
   });

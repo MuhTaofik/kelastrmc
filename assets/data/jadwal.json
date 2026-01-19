@@ -71,12 +71,12 @@
   },
   {
     "hari": "Senin-Kamis",
-    "jam": "07.30 – 11.30",
+    "jam": "13.30 – 17.30",
     "ruang": "LAB 1",
     "sks": 3,
     "matkul": "Grafika Komputer",
     "dosen": "Ryan Alghazali Pakkaja, S.Kom., M.Kom. & Andi Wafda, S.Pd., M.Kom.",
-    "minggu": "16",
+    "minggu": "15",
     "tipe": "lab"
   }
 ]
